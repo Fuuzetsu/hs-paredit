@@ -1,0 +1,24 @@
+name:                hs-paredit
+version:             0.1.0.0
+synopsis:            Generic AST manipulation in a paredit-esque way
+description:         Generic AST manipulation in a paredit-esque way. Aims to
+                     implement common paredit functions with the idea that you
+                     can use the library when writing text editors &c.
+homepage:            https://github.com/Fuuzetsu/hs-paredit
+license:             GPL-3
+license-file:        LICENSE
+author:              Mateusz Kowalczyk
+maintainer:          fuuzetsu@fuuzetsu.co.uk
+category:            Editor
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+source-repository head
+  type:     git
+  location: git@github.com:Fuuzetsu/hs-paredit.git
+
+library
+  build-depends:       base >=4.6 && <4.7
+  hs-source-dirs:      src
+  default-language:    Haskell2010
