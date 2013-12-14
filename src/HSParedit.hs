@@ -9,3 +9,6 @@
 
 module HSParedit where
 
+import Data.Tree.Zipper
+
+
