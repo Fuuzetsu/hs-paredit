@@ -36,4 +36,4 @@ test-suite spec
     , src
 
   build-depends:    base >=4.6 && <4.7, rosezipper, pretty-tree, QuickCheck == 2.*, hspec,
-                    containers, hspec-expectations-pretty
+                    containers, hspec-expectations-pretty, wl-pprint-extras, wl-pprint-terminfo
