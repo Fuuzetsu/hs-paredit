@@ -1,13 +1,13 @@
 module HSParedit.PareditSpec (main, spec) where
 
-import Prelude hiding (last)
-import HSParedit
 import Data.Tree
-import Data.Tree.Zipper
 import Data.Tree.Pretty
+import Data.Tree.Zipper
+import HSParedit
+import Prelude hiding (last)
+import System.Console.Terminfo.PrettyPrint
 import Test.Hspec (hspec, describe, it, Spec)
 import Test.Hspec.Expectations.Pretty
-import System.Console.Terminfo.PrettyPrint
 import Text.PrettyPrint.Free
 
 instance Show a => Pretty (Tree a) where
