@@ -1,9 +1,10 @@
 name:                hs-paredit
 version:             0.1.0.0
-synopsis:            Generic AST manipulation in a paredit-esque way
-description:         Generic AST manipulation in a paredit-esque way. Aims to
+synopsis:            paredit-esque AST manipulation
+description:         AST manipulation in a paredit-esque way. Aims to
                      implement common paredit functions with the idea that you
-                     can use the library when writing text editors &c.
+                     can use the library when writing LISP/Scheme modes for text
+                     editors &c.
 homepage:            https://github.com/Fuuzetsu/hs-paredit
 license:             GPL-3
 license-file:        LICENSE
