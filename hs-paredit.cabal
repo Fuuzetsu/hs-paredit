@@ -25,6 +25,8 @@ library
   default-language:    Haskell2010
   exposed modules:
     HSParedit
+    HSParedit.Printer
+    HSParedit.Types
 
 
 test-suite spec

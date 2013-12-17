@@ -16,18 +16,7 @@ import Data.Monoid
 import Data.Tree
 import Data.Tree.Zipper
 import Data.Tree.Pretty
-
-data Code = CodeSymbol | RoundNode | SquareNode | StringNode
-    | SymbolChar Char | TopLevel deriving Eq
-
-
-instance Show Code where
-    show CodeSymbol = "CodeSymbol"
-    show RoundNode = "RoundNode"
-    show SquareNode = "SquareNode"
-    show (SymbolChar c) = [c]
-    show StringNode = "StringNode"
-    show TopLevel = "TopLevel"
+import HSParedit.Types
 
 onTree :: (TreePos Full a -> TreePos Full b) -> Tree a -> Tree b
 onTree f = toTree . f . fromTree
