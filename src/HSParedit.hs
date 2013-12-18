@@ -17,6 +17,7 @@ import Data.Tree
 import Data.Tree.Zipper
 import Data.Tree.Pretty
 import HSParedit.Types
+import HSParedit.Printer (toScheme)
 
 onTree :: (TreePos Full a -> TreePos Full b) -> Tree a -> Tree b
 onTree f = toTree . f . fromTree
@@ -26,8 +27,11 @@ sc xs = Node CodeSymbol (map (\x -> Node (SymbolChar x) []) xs)
 
 basicTree :: Tree Code
 basicTree = Node { rootLabel = TopLevel
-                 , subForest = [ sc "foo"
-                               , sc "bar"
+                 , subForest = [ Node { rootLabel = RoundNode
+                                      , subForest = [ sc "foo"
+                                                    , sc "bar"
+                                                    ]
+                                      }
                                , Node { rootLabel = RoundNode
                                       , subForest = [ sc "qux"
                                                     , sc "quux"
